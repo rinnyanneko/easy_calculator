@@ -1,11 +1,12 @@
 #include <iostream>
 #include <cmath>
+#include <string>
 #define rad 0.01745329252
 using namespace std;
 int main()
 {
   bool R=1;
-  int iR=0;
+  string sR="0";
   long double A=0;
   long double B=0;
   char symbol;
@@ -73,8 +74,8 @@ int main()
       } 
       
     cout<<"Continue?"<<endl<<"1 continue"<<endl<<"0 exit"<<endl;
-    cin>>iR;
-    if(iR!=1)
+    cin>>sR;
+    if(sR!="1")
     {
       R=0;
       cout<<"exited"<<endl;
