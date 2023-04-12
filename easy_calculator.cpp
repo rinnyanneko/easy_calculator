@@ -2,13 +2,14 @@
 #include <cmath>
 #define rad 0.01745329252
 using namespace std;
- main()
+int main()
 {
   bool R=1;
+  int iR=0;
   long double A=0;
   long double B=0;
   char symbol;
-  cout<<"easy calculator"<<endl<<"credit:@twmccreeper"<<endl<<endl<<endl;
+  cout<<"easy calculator"<<endl<<"credit:@rinnyanneko"<<endl<<endl<<endl;
   while (R)
   {
     A=0;
@@ -16,7 +17,7 @@ using namespace std;
     symbol=0;
     cout<<"Please Enter 1st Number"<<endl;
     cin>>A;
-    cout<<"Please Enter Symbol of Operation"<<endl<<"+=plus, -=subtract, *=multiply, /=devide, ^=power"<<endl<<"1=sin(sinne), 2=cos(cosine), 3=tan(tangent), 4=ctg(cotangent), 5=sec(secant), 6=csc(cosecant)"<<endl;
+    cout<<"Please Enter Symbol of Operation"<<endl<<"+ plus, - subtract, * multiply, / devide, ^ power"<<endl<<"1 sin(sinne), 2 cos(cosine), 3 tan(tangent), 4 ctg(cotangent), 5 sec(secant), 6 csc(cosecant)"<<endl;
     cin>>symbol;
     cout<<"Please Enter 2nd Number"<<endl;
     cin>>B;
@@ -71,12 +72,18 @@ using namespace std;
         cout <<"ERROR: Operation Symbol Not Found"<< endl;
       } 
       
-    cout<<"Continue?"<<endl<<"1=continue"<<endl<<"0=exit"<<endl;
-    cin>>R;
-    if(R!=1)
+    cout<<"Continue?"<<endl<<"1 continue"<<endl<<"0 exit"<<endl;
+    cin>>iR;
+    if(iR!=1)
     {
       R=0;
+      cout<<"exited"<<endl;
       system("pause");
     }
+    else
+    {
+      R=1;
   }
+  }
+    return 0;
 }
